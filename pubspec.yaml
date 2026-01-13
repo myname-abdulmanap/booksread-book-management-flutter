@@ -1,0 +1,70 @@
+name: book_management_app
+description: Book management app with Supabase
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Supabase
+  supabase_flutter: ^2.5.0
+
+  # State Management
+  provider: ^6.1.1
+
+  # UI & Icons
+  google_fonts: ^7.0.0
+  flutter_svg: ^2.0.9
+
+  # PDF & File
+  file_picker: ^8.1.4
+  syncfusion_flutter_pdfviewer: ^32.1.22 # ✅ FIXED
+
+  # Image
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+
+  # Rich Text Editor
+  flutter_quill: ^11.5.0
+
+  # Utilities
+  shared_preferences: ^2.2.2
+  intl: ^0.20.2
+  path_provider: ^2.1.2
+  permission_handler: ^12.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+  cached_network_image: ^3.3.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+  remove_alpha_ios: true
+
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#5B4CCC"
+    theme_color: "#5B4CCC"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/icon/
